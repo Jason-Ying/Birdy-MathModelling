@@ -1,0 +1,9 @@
+5.3.1
+1. Cover Rate (RC)
+We take the area which can contain all the merchants in the alliance as the total area. As the merchants join the alliance, the area covered by new merchants overlaps with the already covered area. Generally, the later the merchant join, the more its area overlaps, the less new area it covers. Therefore, as the number of merchants add up, the covered area shows a marginal diminishing effect likewise. Also, we see the residents as averagelly seperated in the area, so the total impact is linear with the cover rate, and having some relation with the merchant amount.
+2. Advertisement impacts
+We describe the change of advertisement impacts as the change of the number of merchants by a positive impact and a negative impact.
+(1) Positive impact: Advertising Impact
+The more merchants there are, the more a merchant will be advertised to customers, the more possible a merchant is seen by customers. We consider the impact to be linear.
+(2) Negative impact: Drowning Impact
+The more merchants there are, the less possible is a advertisement seen by customers as they scan through the page.

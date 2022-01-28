@@ -1,0 +1,33 @@
+Files
+1. old.csv. Stores the records of purchases before the alliance formed. 5 params are "id", "customer_id", "product_id", "amount", "shop". For param "shop", 0 stands for Shop A while 1 stands for B.
+2. new.csv. Stores the records of purchases after joining the alliance. 6 params are "id", "customer_id", "product_id", "amount", "use_rp", "shop". For param "shop", 0 stands for Shop A while 1 stands for B.
+3. prd.csv. Stores the information of products in both shops. 4 params are "id", "price", "typ_id", "shop". For param "shop", 0 stands for Shop A while 1 stands for shop B. Data in param "typ_id" should start from 0.
+
+Please note that the code has a high requirement for your input accuracy. The file shall not contain extra spaces or letters.
+
+The three files should be placed in the same folder or under the same path as the .exe file.
+
+After you are prepared, double-click on the .exe file.
+
+Inputs
+Please follow the prompt and input all the data required. Inputs shall not contain extra spaces or letters. Press Enter after typing in the numbers and wait for the next prompt.
+
+Demo
+The output should look like this:
+==========
+Money to RP: 0.1
+RP to Money: 0.1
+The  total RP usage rate: 0.25
+Overlap Rate: 0.3333333
+Merchant A benefit rise: 9.2135743%
+With each kind of product rising:
+a: 3.1428965%
+b: 8.1263814%
+c: 12.2183681%
+Merchant B benefit rise: 7.2368624%
+With each kind of product rising:
+b: 6.2438914%
+c: 7.4683649%
+d: 8.2343749%
+==========
+If you run into any problems, feel free to contact the support group. (example@example.com)

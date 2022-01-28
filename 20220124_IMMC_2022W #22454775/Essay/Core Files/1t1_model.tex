@@ -1,0 +1,98 @@
+We use some basic data (both before and after the form of the alliance) from both merchants to show the percentage of the estimated benefit growth brought about by the alliance. The result (revenue growth) is specified to each type of product \textsl{(e.g. food, daily necessities etc.)}. Referencing the results, the merchant can adjust its stocking or "money-to-RP" ("RP-to-money") rates over time to reach the highest benefit. Also, after a short period of data collection, the merchant will be able to estimate the total benefit growth in one year. The process is explained below.
+\newline
+
+\begin{enumerate}[label=(\arabic*)]
+\itembf{Profit Efficiency Calculation}
+
+We estimate the amount of benefit made per unit time ($E$) to see how much benefit will the customers bring to the merchants after the form of the alliance, which still exists without the alliance. The benefit growth is estimated as:
+\[  E_{x,X,c} = \frac{P_x \cdot N_{x,X}}{T}  \]
+
+\itembf{Customer Classification}
+
+We classify the customers into three classes according to the merchant they have made purchases in.
+
+\begin{enumerate}[label=(\alph*)]
+\item A.
+
+These are customers who have only done purchases from Merchant A before the form of the alliance. They bring additional benefit buying a specific product type to Merchant B as:
+\[
+\sum\limits_{L_c  = 0} {\sum\limits_{x = 0}^{M_x} {\sum\limits_{c = 0}^{M_c } {N_{x,1,c}  \cdot P_x } } } \]
+
+\item B.
+
+These are customers who have only done purchases from Merchant B before the form of the alliance. They bring additional benefit buying a specific product type to Merchant A as:
+\[
+\sum\limits_{L_c  = 1} {\sum\limits_{x = 0}^{M_x}} {\sum\limits_{c = 0}^{M_c} } {N_{x,0,c}  \cdot P_x }
+\]
+
+\item A \&\ B.
+
+These are customers who have done purchases from both Merchants. They bring benefit to \X{X} as:
+\[
+\sum\limits_{L_c  = 2} {\sum\limits_{x = 0}^{M_x} {\sum\limits_{c = 0}^{M_c} {N_{x,X,c}  \cdot P_x } } } \]
+
+But they should provide the benefit for \X{X} after the form of the alliance as:
+\[
+\sum\limits_{L_c  = 2} {\sum\limits_{x = 0}^{M_x} {\sum\limits_{c = 0}^{M_c} {E_{x,X,c}  \cdot T'} } } 
+\]
+
+So they bring Merchant X an additional benefit of:
+\[
+\sum\limits_{L_c  = 2} {\sum\limits_{x = 0}^{M_x} } {\sum\limits_{c = 0}^{M_c} } {X_{x,X,c}  \cdot P_x  - E_{x,X,c}  \cdot T'} 
+\]
+
+In total, customers buying a specific type of product bring an additional benefit of:
+
+\phantom{LATEX WO RI NI MA}
+
+\noindent To A:
+\[
+\sum\limits_{L_c  = 1,2} {\sum\limits_{x = 0}^{M_x} } {\sum\limits_{c = 0}^{M_c} } {N_{x,0,c}  \cdot P_x }  - \sum\limits_{L_c  = 2} {\sum\limits_{x = 0}^{M_x} } {\sum\limits_{c = 0}^{M_c} } {E_{x,0,c}  \cdot T'}
+\]
+
+\phantom{LATEX CHAO JI SHA BI}
+
+\noindent To B:
+\[
+\sum\limits_{L_c  = 0,2} {\sum\limits_{x = 0}^{M_x} } {\sum\limits_{c = 0}^{M_c} } {N_{x,1,c}  \cdot P_x }  - \sum\limits_{L_c  = 2} {\sum\limits_{x = 0}^{M_x}} {\sum\limits_{c = 0}^{M_c} } {E_{x,1,c}  \cdot T'}
+\]
+
+\end{enumerate}
+
+\itembf{Losses from issuing RPs}
+
+Merchants lose amount of benefit due to their distribution of \RPd. They are calculated here. Loss for Merchant X:
+\[  RPU_{x,X} \cdot k_2  \]
+
+\itembf{Results}
+
+By adding up additional benefits and losses, we get the total benefit the alliance brings about.
+
+For \A:
+\[
+\Delta _{x,0}  = \sum\limits_{L_c  = 1,2} {\sum\limits_{c = 0}^{M_c} } {N_{x,0,c} }  \cdot P_x  - \sum\limits_{L_c  = 2} {\sum\limits_{c = 0}^{M_c} {E_{x,0,c}  \cdot T'} - RPU_{x,0}  \cdot k_2 }
+\]
+
+For \B:
+\[
+\Delta _{x,1}  = \sum\limits_{L_c  = 0,2} {\sum\limits_{c = 0}^{M_c} } {N_{x,1,c} }  \cdot P_x  - \sum\limits_{L_c  = 2} {\sum\limits_{c = 0}^{M_c} {E_{x,1,c}  \cdot T'} - RPU_{x,1}  \cdot k_2 }
+\]
+
+While the original benefit is:
+\[  R_{x,X} = T^\prime \cdot \sum\limits_{c=0}^{M_c} E_{x,X,c}  \]
+
+So the growth for Product Type $i$ and Merchant X will be:
+\[
+\frac{{\sum\limits_{PT_x  = i} {\sum\limits_{x = 0}^{M_x} {\Delta _{x,X} } } }}{{\sum\limits_{PT_x  = i} {\sum\limits_{x = 0}^{M_x} {R_{x,X} } } }} \cdot 100\% 
+\]
+
+While the total growth of Merchant X:
+\[  \frac
+{\sum\limits_{x=0}^{M_x} \Delta_{x,X}}
+{\sum\limits_{x=0}^{M_x} R_{x,X}}
+\cdot 100\%
+\]
+
+\end{enumerate}
+
+We realize these features through programming. The program is in \textsl{Appendix A}.

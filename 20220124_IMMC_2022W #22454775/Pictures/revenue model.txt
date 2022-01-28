@@ -1,0 +1,32 @@
+We use some basic data (both before and after the form of the alliance) from both merchants to show the percentage of the estimated benifit growth brought by the alliance. The growth is specified to each type of product (e.g. food, daily necessities etc.). Working as a reference for the merchant, the merchant can adjust its stocking or "money-to-RP"("RP-to-money") rates over time to reach the highest benefit. Also, after a short period of data collecting, the merchant will be able to estimate the total benefit growth in the year. The process will be explained below.
+
+(1) Profit Efficiency Calculation
+We estimate the amount of benefit made per unit time to see how many benefit should the customers bring to the merchants in the time after the form of the alliance, which still exists without the merchant, so we can get the benefit growth instead of the total. It's estimated as:
+E_x,X,c=P_x*N_x,X/T
+(2) Customer Classification
+We classify the customers into three parts.
+a) A. These are customers who originally purchase only from Merchant A. They bring additional benefit buying a specific product type to Merchant B as:
+sigma Nx,1,c*P_x L_c=0
+b) B. These are customers who originally purchase only from Merchant B. They bring additional benefit buying a specific product type to Merchant A as:
+sigma Nx,0,c*P_x L_c=1
+c) A&B. These are customers who originally purchase from both Merchants. They bring benefit to Merchant X as:
+sigma Nx,X,c*P_x L_c=2
+But they should provide the benifit for Merchant X after the form of the alliance:
+sigma E_x,X,c*T' L_c=2
+So they bring Merchant X an additional benefit of:
+sigma Nx,X,c*P_x-E_x,X,c*T' L_c=2
+Totally, customers buying a specific product type bring an additional benefit of:
+To A: sigma Nx,0,c*P_x L_c=1or2 - E_x,0,c*T' L_c=2
+To B: sigma Nx,1,c*P_x L_c=0or2 - E_x,1,c*T' L_c=2
+(3) Losses from giving RPs
+Merchants have an amount of loss because of giving out RPs. They are calculated here. Loss for Merchant X:
+RPU_x,X*k2
+(4) Results
+A: delta_x,0=sigma Nx,0,c*P_x L_c=1or2 - E_x,0,c*T' L_c=2 - RPU_x,0*k2
+B: delta_x,1=sigma Nx,1,c*P_x L_c=0or2 - E_x,1,c*T' L_c=2 - RPU_x,1*k2
+while the original benefit is:
+R_x,X=T'*sigmaE_x,X,c
+so the growth for product type i and Merchant X will be:
+delta_x,X / sigma R_x,X * 100% PT_x=i
+while the total growth of Merchant X:
+sigma delta_x,X / sigma R_x,X * 100%

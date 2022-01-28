@@ -1,0 +1,61 @@
+\include{preamble}
+
+\begin{document}
+	\input{template.tex}
+	\input{summary.tex}
+	\pagebreak
+	\tableofcontents
+	\thispagestyle{empty}
+	\pagebreak
+	
+	\section{Introduction}
+	\subsection{Background}
+	\input{background.tex}
+	\subsection{Problem Restatement}
+	\input{restatement.tex}
+	\subsection{Our Work}
+	\input{our_work.tex}
+	
+	\section{Nomenclature}
+	\input{nomenclature.tex}
+	
+	\section{Assumptions}
+	\input{assumptions.tex}
+	
+	\section{One-to-One Alliance}
+	\subsection{Mechanism}
+	\input{mechanism.tex}
+	\subsection{Factors}
+	\input{1t1_factors.tex}
+	\subsection{Revenue Change Model (1-1)}
+	\input{1t1_model.tex}
+	
+	\section{Many-to-Many Alliance}
+	\subsection{Factors}
+	\input{mtm_factors.tex}
+	\subsection{Model Assumptions}
+	\input{mtm_assumptions.tex}
+	\subsection{Revenue Change Model (m-m)}
+	\input{mtm_model.tex}
+	\subsection{Sensitivity Analysis}
+	\input{mtm_sa.tex}
+	
+	\section{Reward Points Distribution}
+	\subsection{Model Assumptions}
+	\input{rpd_assumptions.tex}
+	\subsection{General Route}
+	\input{rpd_route.tex}
+	\subsection{Solution}
+	\input{rpd_solution.tex}
+	
+	\section{Strengths and Weaknesses}
+	\input{strength_weakness.tex}
+	
+	\pagebreak
+	\appendix
+	\section{One-to-One Alliance Revenue Estimation Algorithm}
+	\subsection{Source Code}
+	\input{1t1_alg.tex}
+	\subsection{User Guide}
+	\input{user_guide.tex}
+\end{document}

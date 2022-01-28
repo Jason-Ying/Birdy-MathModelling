@@ -1,0 +1,12 @@
+Strengths
+1. Our one-to-one model are independent of external data.
+The model is solely dependent on products and purchases data, which can be directly obtained from the merchants. Therefore, our model is quite robust, so it can be applied on any one-to-one alliances.
+2. Our one-to-one model is highly efficient.
+The model calculates the profit growth, which is relatively stable in all time of a year. Therefore, we can estimate the year's profit growth by collecting data for a short period of time.
+3. 
+
+Weaknesses
+1. Our one-to-one model has some requirements for the data.
+The one-to-one revenue change model relies on the identification of customers in purchase records so as to label them. So the model would be unable to apply on those merchants who dont identify the customers.
+2. Our many-to-many model is based on a multitude of assumptions.
+We made many assumptions to establish the model. For example, we assumed that the cover range of each merchant is a circle with a radius of 0.5km. The radius actually varies in real life. The assumptions make our model somewhat fragile.

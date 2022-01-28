@@ -1,0 +1,37 @@
+\subsection{Strengths}
+\begin{enumerate}
+\itembf{Our one-to-one model is independent of external data.}
+
+The model is solely dependent on products and purchases data, which can be directly obtained from the merchants. Therefore, our model is quite robust, so it can be applied to any one-to-one alliances.
+
+\itembf{Our one-to-one model is data efficient.}
+
+The model calculates the profit growth, which is relatively stable in all time of a year. Therefore, we can estimate the year's profit growth by collecting data for a short period of time.
+
+\itembf{Our many-to-many model is highly efficient.}
+
+The algorithm only requires the market values, and product type and price from each ally, plus the total number of allies, which is easy to obtain. Therefore, our many-to-many model does not need much data to give the estimation result.
+
+\itembf{Our many-to-many model is robust.}
+
+All arguments in the algorithm are product information and the scale of the allies, which can not be changed overnight. This makes our estimation model robust. Additionally, the many-to-many model is not based on many assumptions, making it not at all fragile, and in other words, robust.
+\end{enumerate}
+
+\subsection{Weaknesses}
+\begin{enumerate}
+\itembf{Our many-to-many model is based on assumptions.}
+
+For example, we assumed that the cover range of each merchant is a circle with a radius of 0.2km. The radius actually varies in real life. The assumptions make our model fragile.
+
+\itembf{Datasets are lacked to precisely decide the value of the constants in our many-to-many model.}
+
+Our functions are based on experience of the marketplace and logic. But only with enough datasets can the constants be accurately measured and decided. Our lack of dataset sources makes the estimate result not relatively accurate.
+
+\itembf{Our m-m model is to some extent sensitive.}
+
+By sensitivity analysis, we get to know that our model is somehow sensitive to $M_i$, which means that the resolution of the product type classification will affect the $I_{\max}$, making our model fragile.
+
+\itembf{Our model neglects the impact brought about by the correlation of products between each two allies.}
+
+The existence of product correlation can bring extra benefit to merchants since they will have an overlapping customer group. However, it's hard to quantify and calculate. So we neglect its impact, and thus lower our model effect.
+\end{enumerate}

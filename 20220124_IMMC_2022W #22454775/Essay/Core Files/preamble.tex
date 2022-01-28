@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fontspec}
+\usepackage[fontsize=12pt]{fontsize}
+\usepackage[all]{xy}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\usepackage{indentfirst}
+
+\numberwithin{equation}{section}
+\geometry{a4paper,centering,scale=0.8}
+% \setmainfont{Times New Roman}
+% \setmonofont{Courier New}
+\linespread{1.2}
+\bibliographystyle{plain}
+\lstset{%
+	basicstyle=\rmfamily,
+	keywordstyle=\bfseries,
+	commentstyle=\itshape,
+	columns=fullflexible,
+	breaklines,
+	tabsize=4}
+
+\setlength{\belowcaptionskip}{9pt}
+\setlength{\abovecaptionskip}{9pt}
+\setlength{\headsep}{0.4in}
+\setlength{\headheight}{14.5pt}
+\captionsetup{font={footnotesize}}
+\renewcommand{\baselinestretch}{1.0}
+\geometry{bottom=1in}
+
+\newcommand{\A}{Merchant $A$}
+\newcommand{\B}{Merchant $B$}
+\newcommand{\X}[1]{Merchant $#1$}
+\newcommand{\RP}[1]{$RP_#1$}
+\newcommand{\RPd}{$RP$}
+\newcommand{\itembf}[1]{\item \textbf{#1}}
+\newcommand{\itemsl}[1]{\item \textsl{#1}}
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+
+\newcommand{\Problem}{E}
+\newcommand{\Team}{22454775}
+\newcommand{\wholepages}{25}
+\title{\huge\textbf{Grand Title}}
+\author{IMMC\#\Team}
+\date{\today}
+
+\pagestyle{fancy}
+\fancyhead[L]{IMMC\#\Team}
+\fancyhead[R]{Page \thepage \ of \wholepages}
+\fancyfoot{}
