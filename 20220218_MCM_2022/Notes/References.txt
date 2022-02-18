@@ -3,3 +3,14 @@ tree carbon sequestration factors
 
 2. https://www.nrs.fs.fed.us/pubs/gtr/gtr_wo059.pdf
 better estimation of carbon sequestration (Pg. 15)
+
+3.@article{白彦锋2009中国木质林产品碳储量及其减排潜力,
+  title={中国木质林产品碳储量及其减排潜力},
+  author={白彦锋 and 姜春前 and 张守攻},
+  journal={生态学报},
+  volume={29},
+  number={1},
+  pages={7},
+  year={2009},
+}
+(file: Pic 0)
