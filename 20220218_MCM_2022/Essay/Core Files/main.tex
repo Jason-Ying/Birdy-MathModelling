@@ -1,0 +1,153 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%basic elements
+
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsthm}
+\usepackage{amsfonts}
+\usepackage{makecell}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{ifthen}
+\usepackage{wrapfig}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{fullpage}
+\usepackage[table]{xcolor}
+\usepackage{subfigure}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{appendix}
+\usepackage{shorttoc}
+\usepackage{pagenote}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{indentfirst}
+\usepackage{fullpage}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{minipage-marginpar}
+\usepackage{hyperref}
+\usepackage{palatino}
+\usepackage{setspace}
+\usepackage{subfigure}
+
+% Replace ABCDEF in the next line with your chosen problem
+% and replace 111111 with your Team Control Number
+% and replace abcdef with your Title
+% and replace 123456 with the number of pages of your essay
+\newcommand{\Problem}{\textcolor{red}{ABCDEF}}
+\newcommand{\Team}{\textcolor{red}{2226737}}
+\newcommand{\Title}{\textcolor{red}{abcdef}}
+\newcommand{\wholepages}{20}
+\title{\huge\textbf{\textcolor{red}{Grand Title}}}
+\author{Team\#\Team}
+\date{\today}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%set up of theorems
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+\numberwithin{equation}{section}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}{Definition}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%setup of page length and script size
+
+\setlength{\belowcaptionskip}{9pt}
+\setlength{\abovecaptionskip}{9pt}
+\setlength{\headsep}{0.4in}
+\setlength{\headheight}{14.5pt}
+\captionsetup{font={footnotesize}}
+\renewcommand{\baselinestretch}{1.0}
+\geometry{bottom=1in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%set up of page style
+
+\pagestyle{fancy}
+\fancyhead[L]{Team\ \#\Team}
+\fancyhead[C]{\Title}
+\fancyhead[R]{Page \thepage \ of \wholepages}
+\fancyfoot{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%hyphenation
+
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\hypersetup{hidelinks} 
+\hypersetup{
+	colorlinks=false,
+	linkcolor=black,
+	citecolor=black,
+	anchorcolor=black
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%end of the beginning part
+
+
+\begin{document}
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif, .png}
+\thispagestyle{empty}
+\vspace*{-16ex}
+
+%MCM/ICM Template
+\centerline{
+\begin{tabular}{*3{c}}
+	\parbox[t]{0.3\linewidth}{\begin{center}\textbf{Problem Chosen}\\ \Large \Problem\end{center}}
+	& \parbox[t]{0.3\linewidth}{\begin{center}\textbf{2020\\ MCM \\ Summary Sheet}\end{center}}
+	& \parbox[t]{0.3\linewidth}{\begin{center}\textbf{Team Control Number}\\ \Large Team \# \Team\end{center}}	\\
+	\hline
+\end{tabular}
+}
+
+%%%%%%%%%%% Begin Summary %%%%%%%%%%%%%%%%%%
+% Enter your summary here replacing the (red) text
+% Replace the text from here ...
+\qquad
+\par
+\textcolor{red}{Summary}
+% to here
+%%%%%%%%%%% End Summary %%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+\maketitle
+\thispagestyle{empty}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\thispagestyle{empty}
+% Uncomment the next line to generate a Table of Contents
+%\shorttableofcontents{Contents}{2}
+\tableofcontents %Uncomment this line to update the Contents
+\newpage
+\pagestyle{fancy}
+\setcounter{page}{1}
+%Begin your paper here
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+114514
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand\refname{Reference}
+\clearpage
+\phantomsection
+\addcontentsline{toc}{section}{Reference}
+\tolerance=500
+\begin{thebibliography}{99}
+114514
+\end{thebibliography}
+\end{document}
