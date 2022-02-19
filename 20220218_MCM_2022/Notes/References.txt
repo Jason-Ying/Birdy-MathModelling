@@ -18,5 +18,9 @@ better estimation of carbon sequestration (Pg. 15)
 4. https://www.researchgate.net/figure/Data-sets-for-largest-crown-width-LCW_tbl2_259286673
 (file: Table 0)
 
-5.https://www.treehugger.com/ten-most-common-trees-united-states-3971258
-树的形状
+5. https://www.fpl.fs.fed.us/documnts/pdf2014/fpl_2014_bergman007.pdf （Pg. 7)
+
+6. https://www.fao.org/3/cb3795m/cb3795m.pdf
+
+7. https://www.fs.usda.gov/rds/archive/catalog/RDS-2016-0005
+tree size dataset (file: Table 1)
