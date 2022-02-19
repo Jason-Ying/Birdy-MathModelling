@@ -14,3 +14,6 @@ better estimation of carbon sequestration (Pg. 15)
   year={2009},
 }
 (file: Pic 0)
+
+4. https://www.researchgate.net/figure/Data-sets-for-largest-crown-width-LCW_tbl2_259286673
+(file: Table 0)
