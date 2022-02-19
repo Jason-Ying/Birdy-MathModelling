@@ -38,10 +38,10 @@
 % and replace 111111 with your Team Control Number
 % and replace abcdef with your Title
 % and replace 123456 with the number of pages of your essay
-\newcommand{\Problem}{\textcolor{red}{ABCDEF}}
+\newcommand{\Problem}{\textcolor{red}{E}}
 \newcommand{\Team}{\textcolor{red}{2226737}}
 \newcommand{\Title}{\textcolor{red}{abcdef}}
-\newcommand{\wholepages}{20}
+\newcommand{\wholepages}{25}
 \title{\huge\textbf{\textcolor{red}{Grand Title}}}
 \author{Team\#\Team}
 \date{\today}
@@ -123,7 +123,7 @@
 \qquad
 \par
 \textcolor{red}{Summary}
-% to here
+%\input{summary}
 %%%%%%%%%%% End Summary %%%%%%%%%%%%%%%%%%%
 \thispagestyle{empty}
 \maketitle
@@ -132,15 +132,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 \thispagestyle{empty}
-% Uncomment the next line to generate a Table of Contents
-%\shorttableofcontents{Contents}{2}
-\tableofcontents %Uncomment this line to update the Contents
+\tableofcontents
 \newpage
 \pagestyle{fancy}
 \setcounter{page}{1}
 %Begin your paper here
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-114514
+\section{Introduction}
+\input{introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand\refname{Reference}
 \clearpage
