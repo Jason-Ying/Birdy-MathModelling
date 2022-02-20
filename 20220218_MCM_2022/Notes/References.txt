@@ -24,3 +24,9 @@ better estimation of carbon sequestration (Pg. 15)
 
 7. https://www.fs.usda.gov/rds/archive/catalog/RDS-2016-0005
 tree size dataset (file: Table 1)
+
+8. https://www.researchgate.net/figure/relationship-between-tree-height-and-age_fig2_269329608
+tree height age
+
+9. https://www.fs.fed.us/pnw/pubs/pnw_gtr609.pdf
+tongass tree species proportion (file: Table 2)
