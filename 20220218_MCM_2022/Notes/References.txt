@@ -30,3 +30,6 @@ tree height age
 
 9. https://www.fs.fed.us/pnw/pubs/pnw_gtr609.pdf
 tongass tree species proportion (file: Table 2)
+
+10. https://www.researchgate.net/publication/342579410_Productivity_differences_between_southern_and_northern_slopes_of_Southern_Carpathians_Romania_for_Norway_spruce_silver_fir_birch_and_black_alder BIRCH
+https://www.woodlandtrust.org.uk/blog/2019/06/tree-lifecycle/ OAK&ROWAN
