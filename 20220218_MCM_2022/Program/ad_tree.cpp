@@ -1,11 +1,12 @@
 #include<bits/stdc++.h>
 #include<windows.h>
 #include<sstream>
+#define PIE 3.1415926
 #define TRCNT 1000
 #define PRMCNT 4
 using namespace std;
-int lambda,t;
-double p,maxf,f,S,step,plant_den,minrng;
+int t;
+double epsilon,lambda,deltat,p,step,minrng,maxf;
 struct prm{
 	double start,end,val;
 	double maxval;
@@ -13,25 +14,24 @@ struct prm{
 struct tre{
 	double birth;
 	double x,y;
-	double sigmaN(double t){
-		return 50*lambda/t*(p/(t+p)+log(t+p)-log(p)-1);	
+	double sigma(double t){
+		return p/(t+p)+log(t+p);	
 	};
 	bool inDst(){
 		return x>=param[0].val && x<=param[2].val && y>=param[1].val && y<=param[3].val;
 	}
 }tree[TRCNT];
 void cls(string s){
-	string scrInit = "Harvest Plan Decision System\nBy MCM/ICM Team 2226737\n=========================================\n";
+	string scrInit = "[Advanced] Harvest Plan Decision System\nBy MCM/ICM Team 2226737\n=========================================\n";
 	system("cls");
 	cout<<scrInit<<s<<endl;
 	Sleep(500);
 }
 int main(){
-	freopen("tree.dat","r",stdin);
-	freopen("tree.out","w",stdout);
+	freopen("ad_tree.dat","r",stdin);
 	
-	cls("Reading parameters(lambda, p, t)...");
-	cin>>lambda>>p>>t;
+	cls("Reading parameters(epsilon, lambda, deltat, p)...");
+	cin>>epsilon>>lambda>>deltat>>p;
 	
 	cls("Reading scanning range and step:");
 	cin>>param[0].start>>param[0].end>>param[1].start>>param[1].end>>step>>minrng;
@@ -40,7 +40,6 @@ int main(){
 	
 	int tmp;
 	cin>>tmp;
-	plant_den=tmp/(param[1].end-param[1].start)/(param[0].end-param[0].end); 
 	for(int i=0;i<tmp;i++)cin>>tree[i].birth>>tree[i].x>>tree[i].y;
 	
 	cls("Calculating...");
@@ -48,15 +47,17 @@ int main(){
 		for(param[1].val=param[1].start;param[1].val<param[1].end;param[1].val+=step){
 			for(param[2].val=param[0].val+step+minrng;param[2].val<param[2].end;param[2].val+=step){
 				for(param[3].val=param[1].val+step+minrng;param[3].val<param[3].end;param[3].val+=step){
-					f=0;
+					double f=0;
 					int cnt=0;
 					for(int i=0;i<tmp;i++){
 						if(tree[i].inDst()){
 							cnt++; 
-							f+=pow(tree[i].sigmaN(-tree[i].birth)-tree[i].sigmaN(1),2);
+							f+=tree[i].sigma(-tree[i].birth);
+							f*=epsilon*lambda*deltat/(2.1625816*p);
+							f-=epsilon*cnt*(log(p)+1);
+							f+=PIE*6.4*cnt;
 						}
 					}
-					f=sqrt(f/cnt);
 					if(f>maxf){
 						maxf=f;
 						for(int j=0;j<PRMCNT;j++)param[j].maxval=param[j].val;
