@@ -14,7 +14,7 @@
 
 @Booklet{UnitedNations,
   title  = {Forest Products 2019},
-  author = {Food & Agriculture Organization of the United Nations},
+  author = {the United Nations},
 }
 
 @Article{McPherson2016,
@@ -22,6 +22,20 @@
   journal = {U.S. Department of Agriculture},
   title   = {Urban tree database},
   year    = {2016},
+}
+
+@TechReport{Campbell2004,
+  author      = {Sally Campbell, Willem W.S. van Hees, Bert Mead},
+  institution = {United StatesDepartment of Agriculture, ForestService, Pacific Northwest Research Station},
+  title       = {Southeast Alaska Forests: Inventory Highlights},
+  year        = {2004},
+}
+
+@Article{S.H.Lamlom2003,
+  author  = {S.H.Lamlom, R.A.Savidge},
+  journal = {Biomass and Bioenergy},
+  title   = {A reassessment of carbon content in wood: variation within and between 41 North American species},
+  year    = {2003},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
