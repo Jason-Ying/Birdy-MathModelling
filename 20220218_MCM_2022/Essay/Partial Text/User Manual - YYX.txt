@@ -1,0 +1,10 @@
+Input
+The first line of the input should contain 3 parameters as mentioned in the essay.
+The second line contains 6 numbers: start of x, end of x, start of y, end of y, scani step length and the minimum harvest area. The 6 numbers should have the same unit (eg. 10m). Scan step length is recommended to be no smaller than 0.1% of either x length or y length. The minimum harvest area is the minimum length of one side of the planned harvest area.
+The next line should contain a number indicating the number of trees.
+On each line of the following lines, there should be the age, x coord and y coord of a tree.
+The numbers should be seperated by only one space.
+File
+The inputs mentioned above should be stored into a file named "tree.dat". To do this, you can first create a .txt file and then change the file type to .dat. Ignore any warnings.
+Usage
+The tree.dat file should be placed in the same path as tree.exe. Double-click the .exe and wait for results. The results' unit is the unit determined when inputting forest areas.

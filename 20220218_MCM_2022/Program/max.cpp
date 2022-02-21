@@ -28,7 +28,7 @@ void cls(string s){
 int main(){
 	freopen("tree.dat","r",stdin);
 	
-	cls("Reading parameters(plant_den, lambda, p, t)...");
+	cls("Reading parameters(plant_density, lambda, p, t)...");
 	cin>>lambda>>p>>t;
 	
 	cls("Reading scanning range and step:");
@@ -67,6 +67,8 @@ int main(){
 	cout<<"Finished.\nOptimal Harvest Area:"<<endl;
 	cout<<"x: From "<<param[0].maxval<<" to "<<param[2].maxval<<endl;
 	cout<<"y: From "<<param[1].maxval<<" to "<<param[3].maxval<<endl;
-	cout<<"Thanks for using.";
+	cout<<"Thanks for using."<<endl;
+	cout<<"Quitting..."<<endl;
+	Sleep(5000);
 	return 0;
 }
