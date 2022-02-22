@@ -9,7 +9,7 @@ int t;
 double epsilon,lambda,deltat,p,step,minrng,maxf;
 struct prm{
 	double start,end,val;
-	double maxval;
+	double maxval; 	
 }param[PRMCNT];
 struct tre{
 	double birth;
@@ -29,6 +29,7 @@ void cls(string s){
 }
 int main(){
 	freopen("ad_tree.dat","r",stdin);
+//	freopen("ad_tree.out","w",stdout);
 	
 	cls("Reading parameters(epsilon, lambda, deltat, p)...");
 	cin>>epsilon>>lambda>>deltat>>p;
@@ -53,11 +54,11 @@ int main(){
 						if(tree[i].inDst()){
 							cnt++; 
 							f+=tree[i].sigma(-tree[i].birth);
-							f*=epsilon*lambda*deltat/(2.1625816*p);
-							f-=epsilon*cnt*(log(p)+1);
-							f+=PIE*6.4*cnt;
 						}
 					}
+					f*=epsilon*lambda*deltat/(2.1625816*p);
+					f-=epsilon*cnt*(log(p)+1);
+					f+=PIE*6.4*cnt;
 					if(f>maxf){
 						maxf=f;
 						for(int j=0;j<PRMCNT;j++)param[j].maxval=param[j].val;
@@ -66,7 +67,7 @@ int main(){
 			}
 		}
 	}
-	
+	cout<<maxf<<endl;
 	cout<<"Finished.\nOptimal Harvest Area:"<<endl;
 	cout<<"x: From "<<param[0].maxval<<" to "<<param[2].maxval<<endl;
 	cout<<"y: From "<<param[1].maxval<<" to "<<param[3].maxval<<endl;

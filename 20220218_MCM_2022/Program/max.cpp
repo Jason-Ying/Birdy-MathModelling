@@ -4,7 +4,7 @@
 #define TRCNT 1000
 #define PRMCNT 4
 using namespace std;
-int lambda,t;
+double lambda;
 double p,maxf,f,S,step,plant_den,minrng;
 struct prm{
 	double start,end,val;
@@ -28,10 +28,10 @@ void cls(string s){
 }
 int main(){
 	freopen("tree.dat","r",stdin);
-	freopen("tree.out","w",stdout);
+//	freopen("tree.out","w",stdout);
 	
-	cls("Reading parameters(lambda, p, t)...");
-	cin>>lambda>>p>>t;
+	cls("Reading parameters(lambda, p)...");
+	cin>>lambda>>p;
 	
 	cls("Reading scanning range and step:");
 	cin>>param[0].start>>param[0].end>>param[1].start>>param[1].end>>step>>minrng;
@@ -44,6 +44,7 @@ int main(){
 	for(int i=0;i<tmp;i++)cin>>tree[i].birth>>tree[i].x>>tree[i].y;
 	
 	cls("Calculating...");
+//	param[0].val=199,param[1].val=149,param[2].val=221,param[3].val=171;
 	for(param[0].val=param[0].start;param[0].val<param[0].end;param[0].val+=step){
 		for(param[1].val=param[1].start;param[1].val<param[1].end;param[1].val+=step){
 			for(param[2].val=param[0].val+step+minrng;param[2].val<param[2].end;param[2].val+=step){
@@ -66,6 +67,7 @@ int main(){
 		}
 	}
 	
+	cout<<maxf<<endl;
 	cout<<"Finished.\nOptimal Harvest Area:"<<endl;
 	cout<<"x: From "<<param[0].maxval<<" to "<<param[2].maxval<<endl;
 	cout<<"y: From "<<param[1].maxval<<" to "<<param[3].maxval<<endl;

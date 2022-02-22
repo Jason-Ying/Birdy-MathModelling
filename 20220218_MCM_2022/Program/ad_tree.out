@@ -1,27 +1,20 @@
-Harvest Plan Decision System
+[Advanced] Harvest Plan Decision System
 By MCM/ICM Team 2226737
 =========================================
-Reading parameters(lambda, p, t)...
-Harvest Plan Decision System
+Reading parameters(epsilon, lambda, deltat, p)...
+[Advanced] Harvest Plan Decision System
 By MCM/ICM Team 2226737
 =========================================
 Reading scanning range and step:
-Harvest Plan Decision System
+[Advanced] Harvest Plan Decision System
 By MCM/ICM Team 2226737
 =========================================
 Calculating...
-119 179 141 201
-119 179 143 201
-119 179 145 201
-121 179 143 201
-121 179 145 201
-123 179 145 201
-199 149 221 171
-30.8504
+1.99916e+006
 Finished.
 Optimal Harvest Area:
-x: From 199 to 221
-y: From 149 to 171
+x: From 1 to 249
+y: From 1 to 249
 Thanks for using.
 Quitting...
 请按任意键继续. . . 
