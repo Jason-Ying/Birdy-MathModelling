@@ -1,8 +1,7 @@
-Team Control Number: IMMC#22454775
+Team Control Number: MCM#2226737
 Problem Chosen: E
 Faculty Advisor: Jin Yiming
 Team Members:
 YING YUXUAN
 CHEN ZHIJIE
-JIN ZHAN
-HU DONGYU
+MA JIAXIN
